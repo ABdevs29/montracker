@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from "./components/Sidebar";
+import Topbar from "./components/Topbar";
+import { Switch, Route} from "react-router-dom";
+import MonthlyEarnings from "./components/MonthlyEarnings";
+import AnnualEarnings from "./components/AnnualEarnings";
+import Tasks from "./components/Tasks";
+import PendingTasks from "./components/PendingTasks";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="wrapper">
+      <Sidebar />
+      <div id="content-wrapper" class="d-flex flex-column">
+        <div className="content">
+          <Topbar />
+          <div class="container-fluid">
+            <Switch>
+            <Route path="/earning/monthly">
+              <MonthlyEarnings/>
+            </Route>
+            <Route path="/earning/annual">
+              <AnnualEarnings/>
+            </Route>
+            <Route exact path="/tasks">
+              <Tasks/>
+            </Route>
+            <Route path="/tasks/pending">
+              <PendingTasks/>
+            </Route>
+            <Route exact path="/">
+              <Dashboard/>
+            </Route>
+            </Switch>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
