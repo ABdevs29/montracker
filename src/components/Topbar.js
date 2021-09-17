@@ -31,7 +31,6 @@ function Topbar() {
         <li className="nav-item dropdown no-arrow d-sm-none">
           <a
             className="nav-link dropdown-toggle"
-            href="#"
             id="searchDropdown"
             role="button"
             data-toggle="dropdown"
@@ -66,7 +65,6 @@ function Topbar() {
         <li className="nav-item dropdown no-arrow mx-1">
           <a
             className="nav-link dropdown-toggle"
-            href="#"
             id="alertsDropdown"
             role="button"
             data-toggle="dropdown"
@@ -119,7 +117,6 @@ function Topbar() {
             </a>
             <a
               className="dropdown-item text-center small text-gray-500"
-              href="#"
             >
               Show All Alerts
             </a>
@@ -129,7 +126,6 @@ function Topbar() {
         <li className="nav-item dropdown no-arrow mx-1">
           <a
             className="nav-link dropdown-toggle"
-            href="#"
             id="messagesDropdown"
             role="button"
             data-toggle="dropdown"
@@ -144,7 +140,7 @@ function Topbar() {
             aria-labelledby="messagesDropdown"
           >
             <h6 className="dropdown-header">Message Center</h6>
-            <a className="dropdown-item d-flex align-items-center" href="#">
+            <a className="dropdown-item d-flex align-items-center">
               <div className="dropdown-list-image mr-3">
                 <img
                   className="rounded-circle"
@@ -161,7 +157,7 @@ function Topbar() {
                 <div className="small text-gray-500">Emily Fowler · 58m</div>
               </div>
             </a>
-            <a className="dropdown-item d-flex align-items-center" href="#">
+            <a className="dropdown-item d-flex align-items-center">
               <div className="dropdown-list-image mr-3">
                 <img
                   className="rounded-circle"
@@ -178,7 +174,7 @@ function Topbar() {
                 <div className="small text-gray-500">Jae Chun · 1d</div>
               </div>
             </a>
-            <a className="dropdown-item d-flex align-items-center" href="#">
+            <a className="dropdown-item d-flex align-items-center">
               <div className="dropdown-list-image mr-3">
                 <img
                   className="rounded-circle"
