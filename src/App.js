@@ -11,10 +11,10 @@ function App() {
   return (
     <div id="wrapper">
       <Sidebar />
-      <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content-wrapper" className="d-flex flex-column">
         <div className="content">
           <Topbar />
-          <div class="container-fluid">
+          <div className="container-fluid">
             <Switch>
             <Route path="/earning/monthly">
               <MonthlyEarnings/>
